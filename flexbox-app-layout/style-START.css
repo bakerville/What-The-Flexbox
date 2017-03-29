@@ -11,6 +11,7 @@ html {
   font-size: 10px;
 }
 
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -102,3 +103,38 @@ a.button {
 /*
   Overall Layout
 */
+.app-wrap {
+  display:flex;
+  flex-direction:column;
+}
+
+.app-wrap > * {
+  flex:1 1 auto;
+}
+
+/* Header */
+
+.app-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* Content */
+
+.content{
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch; 
+}
+/*Icon Bar*/
+
+.icon{
+  display:flex;
+}
+
+.icon-bar a {
+  flex:1;
+} 
+
+
+

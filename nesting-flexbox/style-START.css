@@ -7,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -33,11 +34,40 @@ a {
 a:hover {
   background:rgba(0,0,0,0.4);
 }
-
-
+ 
+/*our flex container*/
 .slider-nav ul {
   list-style: none;
   margin: 0;
   padding: 0; 
+  display:flex;
+  align-items:center;
+ }
+ /* our first flex item */
+.slider-nav li {
+  flex:2;/*this is the flex item -ish */
+  text-align: center;
+  display: flex; /*This is the flex container -ish*/
+ }
+
+.slider-nav .arrow {
+  flex:1;
+}
+
+.arrow a {
+  font-size: 30px;
+}
+
+.slider-nav a {
+  flex-basis:100%;
+  display:flex;
+  align-items:center;
+  /*we want to stretch as well and center*/
+}
+/* This is the flex items*/
+.slider-nav span {
+  display: block;
+  width: 100%;
+
 }
 

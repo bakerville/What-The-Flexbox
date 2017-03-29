@@ -34,11 +34,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box1 {
-  flex:10 5 400px;
+  /*flex-basis:400px;
+    flex-grow:1; at 1 for both box 1 & 2 would equally share the space on the page.
+    */
+  flex:10 5 400px;/*flex: grow shrink basis; is the order of input.*/
 }
 
 .box2 {
-  flex:1 1 400px;
-}
-
-
+  flex:1 1 400px;/*flex: grow shrink basis; is the order of input.*/
+  /*flex-grow:0; the default if not defined.*/
+} 
+/*If flex-grow is defining what to do with extra space, 
+flex-shrink is defining what to do when browsers shrink.*/

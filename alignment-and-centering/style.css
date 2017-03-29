@@ -15,6 +15,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   padding:10px;
 }
 
+
 /* Colours for each box */
 .box1 { background:#1abc9c;}
 .box2 { background:#3498db;}
@@ -33,8 +34,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border:10px solid mistyrose;
   height:100vh;
-  align-items:flex-start;
-}
+  flex-wrap:wrap;
+  justify-content:center;
+  /*justify-content takes the extra space on the main axis(left to right). */ 
+  /*align-content takes the extra space on the cross-axis(top to bottom).*/
+  align-content:center;
+ }
 
 .box {
   width:33.333%;
@@ -50,5 +55,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box9 {
   padding-bottom: 50px;
-  align-self:stretch;
+  align-self:stretch;/*targets just this .box9 container.*/
 }
+

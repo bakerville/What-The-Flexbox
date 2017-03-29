@@ -15,6 +15,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   padding:10px;
 }
 
+
 /* Colours for each box */
 .box1 { background:#1abc9c;}
 .box2 { background:#3498db;}
@@ -38,9 +39,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box3 {
-  order:1;
+  order:0; /*the default order for everything where it is not set is zero*/
+  /*order:1; by setting a value it shifts it to the end of 
+  the row.*/  
 }
 
 .box5 {
-  order:2;
+  order:0;
+  /*order:2; by setting this at 2, it shifts the box5
+   to the end of the row right after box3 from above.*/
+  /*order:-1; would shift the value to the start of the row.*/ 
 }
+/*It is not to be used for things where people need to copy text.
+  This is because when a user highlights 1,2,4, they will end up with 1,2,3,4.
+*/

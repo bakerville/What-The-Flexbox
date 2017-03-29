@@ -15,6 +15,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   padding:10px;
 }
 
+
 /* Colours for each box */
 .box1 { background:#1abc9c;}
 .box2 { background:#3498db;}
@@ -34,9 +35,13 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box {
-  flex:1;
+  flex:1; /*references the leftover space and how it should be divided.*/
 }
 
 .box2 {
-  flex:2;
+  flex:2; /*box2 should have double the space of the other boxes.*/
+}
+
+.box5 {
+  flex:3;
 }
